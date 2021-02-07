@@ -1,185 +1,374 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title> Pulkit Handa </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Pulkit Handa is a Full stack developer based in Haryana,India."/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pulkit Handa</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
 
-    <!-- Template Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.png">
 
-    <!-- Template CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+        <!--Bootstrap Css-->
+        <link rel="stylesheet" href="main-css/main-bootstrap.min.css" />
 
-    <!-- CSS Skin File -->
-    <link href="css/skins/yellow.css" rel="stylesheet">
+        <!-- Materialdesign icons Css -->
+        <link rel="stylesheet" href="main-css/main-materialdesignicons.min.css">
 
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+        <!-- Mobirise icons Css -->
+        <link rel="stylesheet" href="main-css/main-mobiriseicons.css">
 
-    <!-- Modernizr JS File -->
-    <script src="js/modernizr.custom.js"></script>
-</head>
+        <!-- Magnific-popup -->
+        <link rel="stylesheet" href="main-css/main-magnific-popup.css">
 
-<body class="home">
-    <!-- Live Style Switcher Starts - demo only -->
-    <div id="switcher" class="">
-        <div class="content-switcher">
-            <h4>STYLE SWITCHER</h4>
-            <ul>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
-                </li>
-                <li>
-                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
-                </li>
-            </ul>
-            <div id="hideSwitcher">&times;</div>
-        </div>
-    </div>
-    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-    <!-- Live Style Switcher Ends - demo only -->
-    <!-- Header Starts -->
-    <header class="header" id="navbar-collapse-toggle">
-        <!-- Fixed Navigation Starts -->
-        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-            <li class="icon-box active">
-                <i class="fa fa-home"></i>
-                <a href="index.html">
-                    <h2>Home</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-user"></i>
-                <a href="about.html">
-                    <h2>About</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-briefcase"></i>
-                <a href="portfolio.html">
-                    <h2>Portfolio</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-envelope-open"></i>
-                <a href="contact.html">
-                    <h2>Contact</h2>
-                </a>
-            </li>
-            <li class="icon-box">
-                <i class="fa fa-comments"></i>
-                <a href="blog.html">
-                    <h2>Blog</h2>
-                </a>
-            </li>
-        </ul>
-        <!-- Fixed Navigation Ends -->
-        <!-- Mobile Menu Starts -->
-        <nav role="navigation" class="d-block d-lg-none">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="list-unstyled" id="menu">
-                    <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-                </ul>
+        <!-- Animate Css -->
+        <link rel="stylesheet" href="main-css/main-animate.min.css">
+
+        <!-- Owl Slider -->
+        <link rel="stylesheet" href="main-css/main-owl.carousel.css" />
+        <link rel="stylesheet" href="main-css/main-owl.theme.css" />
+        <link rel="stylesheet" href="main-css/main-owl.transitions.css" />
+
+        <!-- Custom style Css -->
+        <link rel="stylesheet" href="main-css/main-style.css">
+    </head>
+
+    <body>
+
+        <!-- START LOADER -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">Loading...</div>
             </div>
-        </nav>
-        <!-- Mobile Menu Ends -->
-    </header>
-    <!-- Header Ends -->
-    <!-- Main Content Starts -->
-    <section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
-        <div class="color-block d-none d-lg-block"></div>
-        <div class="row home-details-container align-items-center">
-            <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-            <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-                <div>
-                    <img src="https://i.imgur.com/qb4cXYa.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
-                    <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">Hey there 👋!</h6>
-                    <h1 class="text-uppercase poppins-font"><span>I'm</span> Pulkit Handa</h1>
-                    <p class="open-sans-font">I'm a Web Designer & Full Stack Developer who is focused on crafting user‑friendly products, I have the ability to 
-                        build Discord bots, Telegram bots, Web apps and Websites. I am passionate about building excellent software that improves the 
-                        lives of those around me.</p>
-                    <a href="about.html" class="btn btn-about">more about me</a>
+        </div>
+        <!-- END LOADER -->
+
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="index.html">
+                        <img src="images/logo.png" alt="" class="img-fluid logo-light"> 
+                        <img src="images/logo-dark.png" alt="" class="img-fluid logo-dark">
+                    </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#home" class="nav-link">Intro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#client" class="nav-link">Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Main Content Ends -->
+        </nav>
+        <!-- END NAVBAR -->
 
-    <!-- Template JS Files -->
-    <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/styleswitcher.js"></script>
-    <script src="js/preloader.min.js"></script>
-    <script src="js/fm.revealator.jquery.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpGridGallery.js"></script>
-    <script src="js/jquery.hoverdir.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/custom.js"></script>
+        <!--START HOME-->
+        <section class="home-bg section h-100vh" id="home">
+            <div class="bg-overlay"></div>
+            <div class="home-table">
+                <div class="home-table-center">
+                    <div class="container position-relative z-index">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="text-white text-center">
+                                    <h4>Hello & Welcome</h4>
+                                    <h1 class="header_title mb-0 mt-3">I Am <span class="simple-text-rotate font-weight-bold"> Pulkit Handa.,A Designer.,A Developer.</span></h1>
+                                    <ul class="social_home list-unstyled text-center pt-4">
+                                        <li class="list-inline-item"><a href="https://github.com/Pulkitchamp"><i class="mdi mdi-github-circle"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/pulkit-handa-2286721aa/"><i class="mdi mdi-linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://t.me/Pulkit_Champ"><i class="mdi mdi-telegram"></i></a></li>
+                                        <li class="list-inline-item"><a href="mailto:pulkithanda2005@gmail.com"><i class="mdi mdi-google-plus"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://twitter.com/Chatra57643667"><i class="mdi mdi-twitter"></i></a></li>
+                                    </ul>
+                                    <div class="header_btn">
+                                        <a href="home.html" class="btn btn-outline-custom btn-rounded mt-4">Go to the main website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_down">
+                <a href="#work" class="scroll">
+                    <i class="mbri-arrow-down text-white"></i>
+                </a>
+            </div>
+        </section>
+        <!--END HOME-->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNMWQ8TBR0"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+        <!--START WORK -->   
+        <section class="section text-center" id="work">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto section-main-title">
+                            <h2>My <span class="font-weight-bold">Work Till Now </span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk"></i>
+                            </div>
+                            <p class="text-muted mx-auto mt-2">See a list of my work done this till now 👇</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <ul class="text-center list-unstyled list-inline mb-0 text-capitlize work_menu" id="menu-filter">
+                            <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".seo">Miscellaneous</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".webdesign">Webdesign</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".work">All Bots</a></li>
+                            <li class="list-inline-item"><a class="" data-filter=".wordpress">Blogs & Content</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-5 work-filter">
+                    <div class="col-lg-4 webdesign wordpress">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/earth.png"></a>
+                            <div class="work_images">
+                                <img src="images/earth.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4 class="mb-0">Web Design, UI Starting</h4>
+                                    <h6 class="mb-0">Home &amp; Page</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo webdesign">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/contact.png"></a>
+                            <div class="work_images">
+                                <img src="images/contact.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Contact Form</h4>
+                                    <h6>Creative &amp; Art</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 work">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/telegram.png"></a>
+                            <div class="work_images">
+                                <img src="images/telegram.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Bots, Dusclox</h4>
+                                    <h6>Telegram Bot</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo webdesign">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/signup.png"></a>
+                            <div class="work_images">
+                                <img src="images/signup.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Graphics, UI Elements</h4>
+                                    <h6>Signup & Login form</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo work">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/help.png"></a>
+                            <div class="work_images">
+                                <img src="images/help.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Discord Bot, Graphics</h4>
+                                    <h6>Lifesync Discord bot</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo work">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/pokify.png"></a>
+                            <div class="work_images">
+                                <img src="images/pokify.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Discord Bot, Music Bot</h4>
+                                    <h6>Polkify Music Discord</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo work">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/Duskclox.png"></a>
+                            <div class="work_images">
+                                <img src="images/Duskclox.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Discord Bot, Graphics</h4>
+                                    <h6>Duskclox Discord Bot</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 seo work">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/explosure.png"></a>
+                            <div class="work_images">
+                                <img src="images/explosure.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Dangerous Bot, Graphics</h4>
+                                    <h6>Explosure Discord Bot</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wordpress">
+                        <div class="work_img_box rounded">
+                            <a class="img-zoom" href="images/blog.png"></a>
+                            <div class="work_images">
+                                <img src="images/blog.png" alt="image" class="img-fluid mx-auto d-block">
+                                <div class="work_overlay">
+                                    <h4>Blog, Media</h4>
+                                    <h6>Web Accessibilty</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END WORK -->
 
-        gtag('config', 'G-YNMWQ8TBR0');
-    </script>
-    
-</body>
+        <!-- START CLIENT -->
+        <section class="section bg-client" id="client">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-center mx-auto text-white section-main-title">
+                            <h2>My <span class="font-weight-bold">Clients</span></h2>
+                            <div class="main-title-border">
+                                <i class="mdi mdi-asterisk"></i>
+                            </div>
+                            <p class="mx-auto mt-2">Don't believe me ? Go to my main website and also check out the users reviews here 👇 handpicked by the users themselves without any alteration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 pt-4">
+                    <div class="col-lg-12">
+                        <div id="owl-demo" class="owl-carousel">
+                            <div class="text-white people_says text-center">
+                                <div class="people_icon">
+                                    <i class="mbri-user"></i>                                
+                                </div>
+                                <div class="people_review_box mt-4">
+                                    <p class="people_name text-white h5 font-weight-bold mb-0">Yash Khanduri</p>
+                                    <p class="h6">Google User</p>
+                                    <p class="people_review text-white mx-auto pt-3 mb-0">" The website and other things made for me were as promised and also they were relishing to the eyes ! Great developer." </p>
+                                </div>
+                            </div>
+                            <div class="text-white people_says text-center">
+                                <div class="people_icon">
+                                    <i class="mbri-user"></i>                                
+                                </div>
+                                <div class="people_review_box mt-4">
+                                    <p class="people_name text-white h5 font-weight-bold mb-0">Yuvraaj Narula</p>
+                                    <p class="h6">Maths Lecturer</p>
+                                    <p class="people_review text-white mx-auto pt-3 mb-0">" The services which i needed were delivered on time and that too at minimal costs. The projects helped my students in online mode. Really Grateful. "</p>
+                                </div>
+                            </div>
+                            <div class="text-white people_says text-center">
+                                <div class="people_icon">
+                                    <i class="mbri-user"></i>                                
+                                </div>
+                                <div class="people_review_box mt-4">
+                                    <p class="people_name text-white h5 font-weight-bold mb-0">Aayan Aggarwal</p>
+                                    <p class="h6">IPC Enthusiast & Law student</p>
+                                    <p class="people_review text-white mx-auto pt-3 mb-0">" The best developer I have met till now ! Got my website and application ready in time. Thanks and would really suggest to others as well. "</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END CLIENT -->
+
+        <!-- START FOOTER -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row pt-4 pb-4">
+                    <div class="col-lg-12">
+                        <div class="float-left float_none mt-2 mb-2">
+                            <p class="copy-rights text-muted mb-0">2021 &copy; Pulkit. Design by Pulkit Handa.</p>
+                        </div>
+                        <div class="float-right float_none mt-2 mb-2">
+                            <ul class="list-inline fot_social mb-0">
+                                <li class="list-inline-item"><a href="https://github.com/Pulkitchamp" class="social-icon text-muted"><i class="mdi mdi-github-circle"></i></a></li>
+                                <li class="list-inline-item"><a href="https://twitter.com/Chatra57643667" class="social-icon text-muted"><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/pulkit-handa-2286721aa/" class="social-icon text-muted"><i class="mdi mdi-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="mailto:pulkithanda2005@gmail.com" class="social-icon text-muted"><i class="mdi mdi-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END FOOTER -->
+
+        <!-- BACK TO TOP -->    
+        <a href="#home" class="back_top"> <i class="mbri-arrow-up"> </i> </a>
+
+
+        <!-- JAVASCRIPTS -->
+        <script src="main-js/main-jquery.min.js"></script>
+        <script src="main-js/main-popper.min.js"></script>
+        <script src="main-js/main-bootstrap.min.js"></script>
+        <!--EASING JS-->
+        <script src="main-js/main-jquery.easing.min.js"></script>
+        <script src="main-js/main-scrollspy.min.js"></script>
+        <!--TEXT ROTETE-->
+        <script src="main-js/main-jquery.simple-text-rotator.js"></script>         
+        <!-- MFP JS -->
+        <script src="main-js/main-jquery.magnific-popup.min.js"></script>
+        <!--PORTFOLIO FILTER JS-->
+        <script src="main-js/main-isotope.js"></script>     
+        <!--PARTICLES ANIMATE JS-->
+        <script src="main-js/main-particles.js"></script>  
+        <script src="main-js/main-particles.app.js"></script>   
+        <!-- OWL CAROUSEL -->
+        <script src="main-js/main-owl.carousel.min.js"></script>
+        <!--CUSTOM JS-->
+        <script src="main-js/main-custom.js"></script>
+        <script>
+            $(".simple-text-rotate").textrotator({
+                animation: "fade",
+                speed: 3500
+            });
+        </script>
+    </body>
 
 </html>

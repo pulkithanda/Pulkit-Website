@@ -1,11 +1,3 @@
-/*
-Template Name: Tunis - Personal Portfolio
-Author: celtano
-Author URI: http://themeforest.net/user/celtano
-Description: Tunis - Personal Portfolio
-Version: 1.0
-*/
-
 /*------------------------------------------------------------------
 [Table of contents]
 	+ General
@@ -60,6 +52,18 @@ body {
   height: 100%;
   width: 100%;
   background-color: #111;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar{
+  width: 5px;
+  background: black;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(9, 102, 114);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .poppins-font {
