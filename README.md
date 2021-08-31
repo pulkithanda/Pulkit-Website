@@ -1,2 +1,2 @@
 # Pulkit-Website
-https://pulkithanda.me
+https://pulkithanda.github.io/Pulkit-Website/
